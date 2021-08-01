@@ -1,0 +1,134 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.simple{
+    border:2px solid white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:0px;
+    left: 48%;
+    box-shadow: 0 0 40px 0px white;
+    color:black;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
+.dark{
+    border:2px ;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:0px;
+    left: 48%;
+   
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    min-height:100vh;
+    align-items: center; 
+    flex-direction: column;
+    background-color: black;
+    
+}
+.calculator{
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px grey;
+  overflow: hidden;
+  
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap:4px;
+    background-color: #1b1a1a; 
+    padding:8px;
+   
+}
+.result{
+    background-color: #222222;
+    color: #fff;
+    font-size: 5vh;
+    padding: 0.5em 0.75em;
+    text-align: right;
+    height:8vh;
+    font-weight: bold;    
+}
+
+button{
+   height: 100px;
+   width: 100px;
+   border-radius:100px;
+   background-color: black;
+   color:white;
+   font-size: 30px;
+   box-shadow: 0 0 10px 0px black
+}
+
+.is-depressed{
+    background-color:rgb(18, 18, 233); 
+    
+}
+
+
+/*Light mode*/
+
+  .mainContainerLight{
+      display: flex;
+      justify-content: center;
+      height:100vh;
+      align-items: center; 
+      flex-direction: column;
+      background-color: #bdd4e7;
+      background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+      
+  }
+
+  .containerLight{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      justify-content: center;
+      gap:5px;
+      background-color: #ffffff;
+      background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+      padding:8px;
+  }
+  .resultLight{
+      background-color:whitesmoke;
+      color:black;
+      font-size: 5vh;
+      padding: 0.5em 0.75em;
+      text-align: right;
+      height:8vh;
+      font-weight: bold;       
+  }
+
+
+@media screen and (max-width: 540px){
+  .container{
+      gap:3px;
+    
+  }
+  button{
+    height: 12vh;
+    width:  18vw;
+    border-radius:25vw;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+  }
+  #output{
+     height: 6vh;
+  }
+}
+.key-equal{
+    grid-column: 4;
+    grid-row: 2/6;
+    height: auto;
+    background-color:rgb(6, 6, 255);
+}
+
