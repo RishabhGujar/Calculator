@@ -80,7 +80,7 @@ button{
   .mainContainerLight{
       display: flex;
       justify-content: center;
-      height:100vh;
+      min-height:100vh;
       align-items: center; 
       flex-direction: column;
       background-color: #bdd4e7;
@@ -115,7 +115,7 @@ button{
   }
   button{
     height: 12vh;
-    width:  18vw;
+    width:  21vw;
     border-radius:25vw;
     background-color: black;
     color:white;
